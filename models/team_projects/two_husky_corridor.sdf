@@ -1,0 +1,108 @@
+<?xml version="1.0"?>
+<sdf version="1.6">
+  <world name="two_husky_corridor">
+    <include>
+      <uri>package://robotics_ii_models/objects_scenes/floor.sdf</uri>
+      <name>ground_floor</name>
+    </include>
+
+    <include>
+      <uri>package://robotics_ii_models/descriptions/robots/mobile/clearpath_husky/urdf/husky.urdf</uri>
+      <name>husky_a</name>
+      <pose>-3.2 0 0.13228 0 0 0</pose>
+    </include>
+    <include>
+      <uri>package://robotics_ii_models/descriptions/robots/mobile/clearpath_husky/urdf/husky.urdf</uri>
+      <name>husky_b</name>
+      <pose>3.2 0 0.13228 0 0 3.14159</pose>
+    </include>
+
+    <model name="north_wall">
+      <static>true</static>
+      <pose>0 1.25 0.6 0 0 0</pose>
+      <link name="wall">
+        <visual name="visual">
+          <geometry><box><size>8.0 0.12 1.2</size></box></geometry>
+          <material><diffuse>0.32 0.38 0.48 1</diffuse></material>
+        </visual>
+        <collision name="collision">
+          <geometry><box><size>8.0 0.12 1.2</size></box></geometry>
+        </collision>
+      </link>
+    </model>
+
+    <model name="south_wall">
+      <static>true</static>
+      <pose>0 -1.25 0.6 0 0 0</pose>
+      <link name="wall">
+        <visual name="visual">
+          <geometry><box><size>8.0 0.12 1.2</size></box></geometry>
+          <material><diffuse>0.32 0.38 0.48 1</diffuse></material>
+        </visual>
+        <collision name="collision">
+          <geometry><box><size>8.0 0.12 1.2</size></box></geometry>
+        </collision>
+      </link>
+    </model>
+
+    <model name="north_gate_barrier">
+      <static>true</static>
+      <pose>0 0.60 0.45 0 0 0</pose>
+      <link name="barrier">
+        <visual name="visual">
+          <geometry><box><size>1.2 0.12 0.9</size></box></geometry>
+          <material><diffuse>0.38 0.43 0.5 1</diffuse></material>
+        </visual>
+        <collision name="collision">
+          <geometry><box><size>1.2 0.12 0.9</size></box></geometry>
+        </collision>
+      </link>
+    </model>
+
+    <model name="south_gate_barrier">
+      <static>true</static>
+      <pose>0 -0.60 0.45 0 0 0</pose>
+      <link name="barrier">
+        <visual name="visual">
+          <geometry><box><size>1.2 0.12 0.9</size></box></geometry>
+          <material><diffuse>0.38 0.43 0.5 1</diffuse></material>
+        </visual>
+        <collision name="collision">
+          <geometry><box><size>1.2 0.12 0.9</size></box></geometry>
+        </collision>
+      </link>
+    </model>
+
+    <model name="husky_a_start_marker">
+      <static>true</static>
+      <pose>-3.2 0 0.006 0 0 0</pose>
+      <link name="marker">
+        <visual name="visual">
+          <geometry><box><size>0.8 1.4 0.01</size></box></geometry>
+          <material><diffuse>0.1 0.35 0.9 0.55</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="husky_b_start_marker">
+      <static>true</static>
+      <pose>3.2 0 0.006 0 0 0</pose>
+      <link name="marker">
+        <visual name="visual">
+          <geometry><box><size>0.8 1.4 0.01</size></box></geometry>
+          <material><diffuse>0.9 0.35 0.08 0.55</diffuse></material>
+        </visual>
+      </link>
+    </model>
+
+    <model name="single_lane_zone">
+      <static>true</static>
+      <pose>0 0 0.004 0 0 0</pose>
+      <link name="marker">
+        <visual name="visual">
+          <geometry><box><size>1.2 1.08 0.008</size></box></geometry>
+          <material><diffuse>0.95 0.72 0.1 0.35</diffuse></material>
+        </visual>
+      </link>
+    </model>
+  </world>
+</sdf>

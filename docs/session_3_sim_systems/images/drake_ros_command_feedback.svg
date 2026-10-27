@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1040" height="390" viewBox="0 0 1040 390" role="img" aria-labelledby="title desc">
+  <title id="title">ROS commands and feedback flow through a Drake simulation</title>
+  <desc id="desc">A ROS joint trajectory enters a subscriber and adapter, then a controller and MultibodyPlant. Measured plant state returns through a state adapter and ROS joint-state publisher.</desc>
+  <defs>
+    <marker id="blueArrow" markerWidth="11" markerHeight="11" refX="9" refY="5.5" orient="auto"><path d="M0 0 L11 5.5 L0 11 z" fill="#2463eb"/></marker>
+    <marker id="greenArrow" markerWidth="11" markerHeight="11" refX="9" refY="5.5" orient="auto"><path d="M0 0 L11 5.5 L0 11 z" fill="#168566"/></marker>
+  </defs>
+  <rect width="1040" height="390" rx="18" fill="#f5f7fb"/>
+  <text x="34" y="40" font-family="Arial,sans-serif" font-size="22" font-weight="700" fill="#1c2b3a">One ROS command enters the diagram; measured state returns to ROS</text>
+  <text x="56" y="84" font-family="Arial,sans-serif" font-size="13" font-weight="700" fill="#2463eb">COMMAND PATH</text>
+  <path d="M205 126 H299 M430 126 H522 M653 126 H745" fill="none" stroke="#2463eb" stroke-width="4" marker-end="url(#blueArrow)"/>
+  <rect x="48" y="97" width="157" height="68" rx="11" fill="#dbeafe" stroke="#2463eb" stroke-width="2"/>
+  <text x="126" y="123" text-anchor="middle" font-family="Arial,sans-serif" font-size="13" font-weight="700" fill="#1d3556">ROS topic</text>
+  <text x="126" y="145" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" fill="#344b67">JointTrajectory</text>
+  <rect x="299" y="97" width="131" height="68" rx="11" fill="#fff" stroke="#5e7fa2" stroke-width="2"/>
+  <text x="364" y="123" text-anchor="middle" font-family="Arial,sans-serif" font-size="13" font-weight="700" fill="#263746">Subscriber</text>
+  <text x="364" y="145" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" fill="#526477">message adapter</text>
+  <rect x="522" y="97" width="131" height="68" rx="11" fill="#fff2d4" stroke="#c48d10" stroke-width="2"/>
+  <text x="587" y="123" text-anchor="middle" font-family="Arial,sans-serif" font-size="13" font-weight="700" fill="#5e4708">Controller</text>
+  <text x="587" y="145" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" fill="#6b5820">desired state → torque</text>
+  <rect x="745" y="97" width="238" height="68" rx="11" fill="#e6eaf0" stroke="#536477" stroke-width="2"/>
+  <text x="864" y="124" text-anchor="middle" font-family="Arial,sans-serif" font-size="13" font-weight="700" fill="#263746">MultibodyPlant</text>
+  <text x="864" y="146" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" fill="#526477">robot state evolves over time</text>
+  <path d="M864 166 V219 H568 V239" fill="none" stroke="#168566" stroke-width="4" marker-end="url(#greenArrow)"/>
+  <path d="M518 273 H418" fill="none" stroke="#168566" stroke-width="4" marker-end="url(#greenArrow)"/>
+  <path d="M318 273 H218" fill="none" stroke="#168566" stroke-width="4" marker-end="url(#greenArrow)"/>
+  <text x="56" y="214" font-family="Arial,sans-serif" font-size="13" font-weight="700" fill="#168566">MEASURED FEEDBACK PATH</text>
+  <rect x="48" y="239" width="170" height="68" rx="11" fill="#d9f2e8" stroke="#168566" stroke-width="2"/>
+  <text x="133" y="265" text-anchor="middle" font-family="Arial,sans-serif" font-size="13" font-weight="700" fill="#18573f">ROS topic</text>
+  <text x="133" y="287" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" fill="#285c49">JointState</text>
+  <rect x="318" y="239" width="100" height="68" rx="11" fill="#fff" stroke="#5e7fa2" stroke-width="2"/>
+  <text x="368" y="265" text-anchor="middle" font-family="Arial,sans-serif" font-size="13" font-weight="700" fill="#263746">Publisher</text>
+  <text x="368" y="287" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" fill="#526477">serializer</text>
+  <rect x="518" y="239" width="100" height="68" rx="11" fill="#fff" stroke="#5e7fa2" stroke-width="2"/>
+  <text x="568" y="265" text-anchor="middle" font-family="Arial,sans-serif" font-size="13" font-weight="700" fill="#263746">State</text>
+  <text x="568" y="287" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" fill="#526477">adapter</text>
+  <rect x="718" y="239" width="265" height="68" rx="11" fill="#e6eaf0" stroke="#536477" stroke-width="2"/>
+  <text x="850" y="265" text-anchor="middle" font-family="Arial,sans-serif" font-size="13" font-weight="700" fill="#263746">Plant state output</text>
+  <text x="850" y="287" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" fill="#526477">joint positions and velocities</text>
+  <text x="520" y="354" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" fill="#526477">The adapters bridge Drake's typed ports and ROS message types; a Drake system is not automatically a ROS node.</text>
+</svg>

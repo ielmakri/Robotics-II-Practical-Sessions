@@ -1,0 +1,8 @@
+/**:
+  ros__parameters:
+    joint_name: tutorial_joint
+    amplitude: 1.0
+    frequency: 0.10
+    publish_rate: 20.0
+    warning_position: 0.75
+    report_period: 1.0

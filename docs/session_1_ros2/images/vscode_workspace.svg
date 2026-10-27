@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="650" viewBox="0 0 1200 650">
+  <rect width="1200" height="650" fill="#f4f6f8"/>
+  <rect x="30" y="24" width="1140" height="602" rx="10" fill="#1e1e1e" stroke="#b9c2cc" stroke-width="2"/>
+  <rect x="30" y="24" width="1140" height="34" rx="10" fill="#323233"/>
+  <circle cx="51" cy="41" r="6" fill="#ff5f56"/>
+  <circle cx="71" cy="41" r="6" fill="#ffbd2e"/>
+  <circle cx="91" cy="41" r="6" fill="#27c93f"/>
+  <text x="600" y="46" text-anchor="middle" fill="#e7e7e7" font-family="Arial, sans-serif" font-size="14">Robotics-II - Visual Studio Code</text>
+  <rect x="30" y="58" width="310" height="568" fill="#252526"/>
+  <text x="50" y="88" fill="#cccccc" font-family="Arial, sans-serif" font-size="14" font-weight="bold">EXPLORER</text>
+  <g fill="#d4d4d4" font-family="Arial, sans-serif" font-size="15">
+    <text x="50" y="120">▾ ROBOTICS-II</text>
+    <text x="68" y="150">▾ docs</text>
+    <text x="88" y="178">▾ session_1_ros2</text>
+    <text x="108" y="206" fill="#9cdcfe">README.md</text>
+    <text x="68" y="236">▾ exercises</text>
+    <text x="88" y="264">▾ session_1</text>
+    <text x="108" y="292">velocity_guard_template.py</text>
+    <text x="68" y="322">▾ ros2_ws / src</text>
+    <text x="88" y="350">▾ robotics_ii_tutorials</text>
+    <text x="108" y="378">▾ launch</text>
+    <text x="126" y="406">session1_joint_pipeline.launch.py</text>
+    <text x="108" y="434">▾ robotics_ii_tutorials</text>
+    <text x="126" y="462" fill="#ce9178">joint_state_source.py</text>
+    <text x="126" y="490">joint_state_monitor.py</text>
+    <text x="108" y="518">setup.py</text>
+  </g>
+  <rect x="340" y="58" width="830" height="360" fill="#1e1e1e"/>
+  <rect x="340" y="58" width="260" height="34" fill="#2d2d2d"/>
+  <text x="360" y="80" fill="#ffffff" font-family="Arial, sans-serif" font-size="14">joint_state_source.py</text>
+  <g font-family="monospace" font-size="16">
+    <text x="370" y="130" fill="#c586c0">class</text>
+    <text x="422" y="130" fill="#4ec9b0">JointStateSource</text>
+    <text x="570" y="130" fill="#d4d4d4">(Node):</text>
+    <text x="400" y="164" fill="#c586c0">def</text>
+    <text x="432" y="164" fill="#dcdcaa">__init__</text>
+    <text x="512" y="164" fill="#d4d4d4">(self):</text>
+    <text x="430" y="198" fill="#d4d4d4">self.publisher = self.create_publisher(</text>
+    <text x="460" y="232" fill="#4ec9b0">JointState</text>
+    <text x="546" y="232" fill="#d4d4d4">,</text>
+    <text x="566" y="232" fill="#ce9178">"tutorial/joint_states"</text>
+    <text x="790" y="232" fill="#d4d4d4">, 10)</text>
+    <text x="430" y="266" fill="#d4d4d4">self.timer = self.create_timer(</text>
+    <text x="460" y="300" fill="#b5cea8">1.0</text>
+    <text x="492" y="300" fill="#d4d4d4">/ publish_rate, self.publish_state)</text>
+    <text x="400" y="348" fill="#c586c0">def</text>
+    <text x="432" y="348" fill="#dcdcaa">publish_state</text>
+    <text x="558" y="348" fill="#d4d4d4">(self):</text>
+    <text x="430" y="382" fill="#d4d4d4">self.publisher.publish(message)</text>
+  </g>
+  <rect x="340" y="418" width="830" height="208" fill="#181818"/>
+  <text x="360" y="446" fill="#cccccc" font-family="Arial, sans-serif" font-size="13" font-weight="bold">TERMINAL</text>
+  <g fill="#d4d4d4" font-family="monospace" font-size="15">
+    <text x="360" y="480">$ source ~/git/Robotics-II/scripts/setup_workspace.bash</text>
+    <text x="360" y="510">$ ros2 launch robotics_ii_tutorials session1_joint_pipeline.launch.py</text>
+    <text x="360" y="544" fill="#7ee787">[joint_state_source]: Publishing tutorial_joint at 20.0 Hz</text>
+    <text x="360" y="574" fill="#7ee787">[joint_state_monitor]: Monitoring tutorial_joint; warning at |q| &gt;= 0.750 rad</text>
+    <text x="360" y="604" fill="#9cdcfe">[joint_state_monitor]: tutorial_joint: q=+0.581 rad (ok)</text>
+  </g>
+</svg>

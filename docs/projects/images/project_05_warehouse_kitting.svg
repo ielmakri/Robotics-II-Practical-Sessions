@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="590" viewBox="0 0 1200 590" role="img" aria-labelledby="title desc">
+<title id="title">Project 05: Warehouse order kitting</title>
+<desc id="desc">Schematic of a Husky mobile base carrying a Panda arm for warehouse order kitting. The drawing shows its workcell and the coordinated object flow.</desc>
+<defs><marker id="arrow" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto"><path d="M0 0 L9 4.5 L0 9 Z" fill="#e08744"/></marker></defs>
+<style>
+.title{font:700 27px Inter,Arial,sans-serif;fill:#15283d}.sub{font:15px Inter,Arial,sans-serif;fill:#586d83}
+.kicker{font:700 12px Inter,Arial,sans-serif;fill:#b65d28;letter-spacing:1.4px}
+.label{font:700 13px Inter,Arial,sans-serif;fill:#274055;letter-spacing:.4px}
+.small{font:13px Inter,Arial,sans-serif;fill:#607286}.tiny{font:700 10px Inter,Arial,sans-serif;fill:#506779}.dark{fill:#fff}
+.card{fill:#fff;stroke:#e0e7ef;stroke-width:1.5}.surface{fill:#f0f5fa;stroke:#cfdae6;stroke-width:2}
+.belt{fill:#dce8f2;stroke:#7893ab;stroke-width:2}.roller{fill:#fff;stroke:#8298ab;stroke-width:3}
+.cargo{fill:#6bb8cc;stroke:#2e8197;stroke-width:1.5}.cargo2{fill:#f2bd76;stroke:#c77a30;stroke-width:1.5}
+.bin{fill:#e6f3f7;stroke:#76b5c2;stroke-width:2}.bin2{fill:#fff1dc;stroke:#e0aa5f;stroke-width:2}
+.green{fill:#e4f4ed;stroke:#72b99a;stroke-width:2}.red{fill:#fff0ed;stroke:#dd9484;stroke-width:2}
+.drawer{fill:#f8fbfd;stroke:#b7c8d7;stroke-width:1.5}.machine{fill:#34485d;stroke:#20344a;stroke-width:2}.machinewindow{fill:#e5eef5;stroke:#8da3b7;stroke-width:2}
+.fixture{fill:#79b7c4;stroke:#357d8c;stroke-width:2}.status{fill:#86d6a3;stroke:#c2f0d3;stroke-width:2}.light{fill:#edf4fa}
+.pallet{fill:#c89454;stroke:#956331;stroke-width:2}.rack{fill:#f4f7fa;stroke:#93a9ba;stroke-width:2}.rackline{stroke:#a2b5c4;stroke-width:3}
+.tray{fill:#f0f5f8;stroke:#a1b6c6;stroke-width:2}.aircraft{fill:#e3eaf1;stroke:#8fa2b3;stroke-width:2}.wing{fill:#d6e1ea;stroke:#8fa2b3;stroke-width:2}.cone{fill:#f28a43;stroke:#bf5b24;stroke-width:2}.chock{fill:#e4af56;stroke:#a9762c;stroke-width:2}
+.slot{fill:#9dc6cf;stroke:#e5f2f4;stroke-width:2}.dash{stroke:#d2803c;stroke-width:2;stroke-dasharray:9 8;fill:none}.arrow{stroke:#e08744;stroke-width:3;fill:none;marker-end:url(#arrow)}
+.step{fill:#f3f7fb;stroke:#dbe4ed;stroke-width:1.5}.steptext{font:600 13px Inter,Arial,sans-serif;fill:#42596f}
+</style>
+
+<rect width="1200" height="590" rx="28" fill="#f7f9fc"/>
+<text x="48" y="47" class="kicker">ROBOTICS II · MULTI-ROBOT TEAM PROJECT 05</text>
+<text x="48" y="84" class="title">Warehouse order kitting</text>
+<text x="48" y="108" class="sub">Build recipe-specific kits from shared stock and retain part IDs</text>
+<rect x="39" y="132" width="1122" height="340" rx="22" class="card"/>
+<rect x="61" y="153" width="259" height="296" rx="18" fill="#eef5fa"/>
+<text x="190" y="187" text-anchor="middle" class="label">MOBILE MANIPULATOR</text>
+
+      <g>
+        <rect x="104" y="275" width="134" height="54" rx="13" fill="#4b8bb5"/>
+        <circle cx="132" cy="334" r="12" fill="#263a4c"/><circle cx="211" cy="334" r="12" fill="#263a4c"/>
+        <rect x="143" y="265" width="53" height="12" rx="5" fill="#2d607f"/>
+        <circle cx="169" cy="260" r="12" fill="#e9a45e"/>
+        <path d="M169 260 L151 237 L174 215 L188 231" fill="none" stroke="#e9a45e" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/>
+        <circle cx="188" cy="231" r="7" fill="#c57837"/>
+        <path d="M188 231 L202 217 M188 231 L203 235" stroke="#c57837" stroke-width="4" stroke-linecap="round"/>
+      </g>
+    
+<text x="171" y="371" text-anchor="middle" class="small">Husky base + mounted Panda arm</text>
+<text x="171" y="396" text-anchor="middle" class="tiny">separate commands · measured feedback</text>
+<path d="M245 300 H357" class="arrow"/>
+<text x="379" y="167" class="kicker">KIT ASSEMBLY CELL</text>
+
+          <text x="390" y="194" class="label">SHARED STOCK</text>
+          <rect x="382" y="211" width="213" height="145" rx="12" class="rack"/>
+          <line x1="394" y1="257" x2="583" y2="257" class="rackline"/><line x1="394" y1="306" x2="583" y2="306" class="rackline"/>
+          <rect x="404" y="222" width="49" height="27" rx="5" class="cargo"/><text x="429" y="241" text-anchor="middle" class="tiny dark">P1</text>
+          <rect x="464" y="222" width="49" height="27" rx="5" class="cargo2"/><text x="489" y="241" text-anchor="middle" class="tiny dark">P2</text>
+          <rect x="524" y="222" width="49" height="27" rx="5" class="cargo"/><text x="549" y="241" text-anchor="middle" class="tiny dark">P3</text>
+          <rect x="411" y="270" width="49" height="27" rx="5" class="cargo2"/><text x="436" y="289" text-anchor="middle" class="tiny dark">P4</text>
+          <rect x="471" y="270" width="49" height="27" rx="5" class="cargo"/><text x="496" y="289" text-anchor="middle" class="tiny dark">P5</text>
+          <path d="M604 279 H684" class="arrow"/>
+          <rect x="710" y="207" width="166" height="129" rx="12" class="tray"/>
+          <text x="793" y="231" text-anchor="middle" class="label">KIT A · RECIPE 1</text>
+          <rect x="729" y="246" width="55" height="34" rx="5" class="cargo"/><rect x="799" y="246" width="55" height="34" rx="5" class="cargo2"/>
+          <rect x="729" y="290" width="55" height="34" rx="5" class="cargo2"/><text x="793" y="374" text-anchor="middle" class="small">KIT B uses a different recipe.</text>
+          <rect x="916" y="217" width="177" height="54" rx="10" class="green"/><text x="1004" y="250" text-anchor="middle" class="label">COMPLETE</text>
+          <rect x="916" y="286" width="177" height="54" rx="10" class="red"/><text x="1004" y="319" text-anchor="middle" class="label">SHORTAGE / PAUSE</text>
+        
+<text x="44" y="495" class="kicker">MISSION FLOW</text>
+<rect x="57" y="516" width="250" height="48" rx="12" class="step"/><text x="182" y="545" class="steptext" text-anchor="middle">Select recipe</text><rect x="333" y="516" width="250" height="48" rx="12" class="step"/><text x="458" y="545" class="steptext" text-anchor="middle">Pick from stock tote</text><rect x="609" y="516" width="250" height="48" rx="12" class="step"/><text x="734" y="545" class="steptext" text-anchor="middle">Fill kit compartments</text><rect x="885" y="516" width="250" height="48" rx="12" class="step"/><text x="1010" y="545" class="steptext" text-anchor="middle">Commit or pause order</text>
+</svg>

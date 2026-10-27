@@ -1,0 +1,9 @@
+# Only send Dockerfile inputs to the builder. The full course repository is
+# bind-mounted when the container starts.
+**
+!docker/
+!docker/course_setup.bash
+!ros2_ws/
+!ros2_ws/src/
+!ros2_ws/src/*/
+!ros2_ws/src/*/package.xml

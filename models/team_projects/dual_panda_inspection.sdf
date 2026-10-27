@@ -1,0 +1,102 @@
+<?xml version="1.0"?>
+<sdf version="1.6">
+  <world name="dual_panda_inspection">
+    <include>
+      <uri>package://robotics_ii_models/objects_scenes/floor.sdf</uri>
+      <name>ground_floor</name>
+    </include>
+
+    <include>
+      <uri>package://robotics_ii_models/descriptions/robots/arms/panda_fer/urdf/panda_fer_hand.urdf</uri>
+      <name>panda_a</name>
+      <pose>-0.10 -0.55 0 0 0 0</pose>
+    </include>
+    <joint name="world_to_panda_a" type="fixed">
+      <parent>world</parent>
+      <child>panda_a::panda_link0</child>
+    </joint>
+
+    <include>
+      <uri>package://robotics_ii_models/descriptions/robots/arms/panda_fer/urdf/panda_fer_hand.urdf</uri>
+      <name>panda_b</name>
+      <pose>-0.10 0.55 0 0 0 0</pose>
+    </include>
+    <joint name="world_to_panda_b" type="fixed">
+      <parent>world</parent>
+      <child>panda_b::panda_link0</child>
+    </joint>
+
+    <model name="inspection_panel">
+      <static>true</static>
+      <pose>0.42 0 0.42 0 0 0</pose>
+      <link name="panel">
+        <visual name="visual">
+          <geometry><box><size>0.06 1.65 0.78</size></box></geometry>
+          <material><diffuse>0.72 0.76 0.8 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+
+    <model name="central_keep_clear_strip">
+      <static>true</static>
+      <pose>0.20 0 0.006 0 0 0</pose>
+      <link name="marker">
+        <visual name="visual">
+          <geometry><box><size>0.32 0.40 0.01</size></box></geometry>
+          <material><diffuse>0.95 0.72 0.1 0.55</diffuse></material>
+        </visual>
+      </link>
+    </model>
+
+    <model name="shared_center_scan_marker">
+      <static>true</static><pose>0.34 0 0.58 0 0 0</pose>
+      <link name="marker"><visual name="visual">
+        <geometry><sphere><radius>0.035</radius></sphere></geometry>
+        <material><diffuse>0.95 0.72 0.1 1</diffuse></material>
+      </visual></link>
+    </model>
+
+    <model name="panda_a_scan_marker_1">
+      <static>true</static><pose>0.34 -0.48 0.58 0 0 0</pose>
+      <link name="marker"><visual name="visual">
+        <geometry><sphere><radius>0.035</radius></sphere></geometry>
+        <material><diffuse>0.1 0.55 0.95 1</diffuse></material>
+      </visual></link>
+    </model>
+    <model name="panda_a_scan_marker_2">
+      <static>true</static><pose>0.34 -0.72 0.58 0 0 0</pose>
+      <link name="marker"><visual name="visual">
+        <geometry><sphere><radius>0.035</radius></sphere></geometry>
+        <material><diffuse>0.1 0.55 0.95 1</diffuse></material>
+      </visual></link>
+    </model>
+    <model name="panda_a_scan_marker_3">
+      <static>true</static><pose>0.34 -0.96 0.58 0 0 0</pose>
+      <link name="marker"><visual name="visual">
+        <geometry><sphere><radius>0.035</radius></sphere></geometry>
+        <material><diffuse>0.1 0.55 0.95 1</diffuse></material>
+      </visual></link>
+    </model>
+    <model name="panda_b_scan_marker_1">
+      <static>true</static><pose>0.34 0.48 0.58 0 0 0</pose>
+      <link name="marker"><visual name="visual">
+        <geometry><sphere><radius>0.035</radius></sphere></geometry>
+        <material><diffuse>0.96 0.43 0.12 1</diffuse></material>
+      </visual></link>
+    </model>
+    <model name="panda_b_scan_marker_2">
+      <static>true</static><pose>0.34 0.72 0.58 0 0 0</pose>
+      <link name="marker"><visual name="visual">
+        <geometry><sphere><radius>0.035</radius></sphere></geometry>
+        <material><diffuse>0.96 0.43 0.12 1</diffuse></material>
+      </visual></link>
+    </model>
+    <model name="panda_b_scan_marker_3">
+      <static>true</static><pose>0.34 0.96 0.58 0 0 0</pose>
+      <link name="marker"><visual name="visual">
+        <geometry><sphere><radius>0.035</radius></sphere></geometry>
+        <material><diffuse>0.96 0.43 0.12 1</diffuse></material>
+      </visual></link>
+    </model>
+  </world>
+</sdf>

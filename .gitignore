@@ -1,0 +1,46 @@
+# ROS 2 / colcon build products
+ros2_ws/build/
+ros2_ws/install/
+ros2_ws/log/
+ros2_ws/colcon-build/
+ros2_ws/colcon-install/
+ros2_ws/colcon-log/
+*.egg-info/
+
+# Accidental build products created from the repository root
+/build/
+/install/
+/log/
+
+# Locally downloaded update archives
+/Robotics-II-*.zip
+/robotics_ii_latest_course_update.patch
+
+# Drake-ROS is fetched by scripts/install.sh at its pinned upstream commit.
+ros2_ws/src/drake-ros/
+
+# Windows download metadata
+*:Zone.Identifier
+
+# Editor, operating system, and local-agent files
+.vscode/
+.idea/
+.agents/
+.codex/
+.DS_Store
+Thumbs.db
+Desktop.ini
+*.swp
+*.swo
+*~
+__pycache__/
+*.py[cod]
+
+# Desktop / OS trash folders
+.Trash/
+.Trash-*/
+Trash/
+trash/
+
+# Created locally by scripts/install.sh
+scripts/installed-versions.tsv

@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="420" viewBox="0 0 920 420" role="img" aria-labelledby="title desc">
+  <title id="title">SDF scene with a Panda arm mounted on a Husky base</title>
+  <desc id="desc">Course scene showing a Husky mobile base carrying a Panda arm, both loaded as named model instances. The arm reaches to a dynamic supply bin on a workbench with a mesh visual and simple collision proxy.</desc>
+  <defs><marker id="arrow" markerWidth="11" markerHeight="11" refX="9" refY="5.5" orient="auto"><path d="M0 0 L11 5.5 L0 11 z" fill="#db8243"/></marker></defs>
+  <rect width="920" height="420" rx="18" fill="#f5f7fb"/>
+  <text x="34" y="39" font-family="Arial,sans-serif" font-size="22" font-weight="700" fill="#1c2b3a">SDF mounts two actuated subsystems in one mobile manipulator</text>
+  <rect x="34" y="64" width="852" height="292" rx="16" fill="#fff" stroke="#9aa8b7" stroke-width="2"/>
+  <rect x="48" y="78" width="824" height="264" rx="10" fill="#eef2f5"/>
+  <rect x="79" y="224" width="225" height="84" rx="16" fill="#dbeafe" stroke="#2463eb" stroke-width="2"/>
+  <g transform="translate(184 263)">
+    <rect x="-48" y="2" width="96" height="38" rx="10" fill="#3d82ad"/>
+    <circle cx="-29" cy="43" r="9" fill="#1e3345"/><circle cx="31" cy="43" r="9" fill="#1e3345"/>
+    <rect x="-18" y="-4" width="36" height="9" rx="4" fill="#235e7e"/>
+    <circle cx="0" cy="-12" r="8" fill="#e89b55"/>
+    <path d="M0 -12 L-15 -36 L10 -58 L24 -44" fill="none" stroke="#e89b55" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="24" cy="-44" r="5" fill="#b96633"/>
+    <path d="M24 -44 L36 -54 M24 -44 L37 -38" stroke="#b96633" stroke-width="3" stroke-linecap="round"/>
+  </g>
+  <text x="190" y="328" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" font-weight="700" fill="#33475b">HUSKY + MOUNTED PANDA</text>
+  <path d="M299 240 C365 199 404 199 466 222" fill="none" stroke="#db8243" stroke-width="4" stroke-dasharray="8 6" marker-end="url(#arrow)"/>
+  <text x="378" y="186" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" fill="#526477">mobile base route</text>
+  <rect x="498" y="219" width="223" height="67" rx="9" fill="#8c9ba8" stroke="#637585" stroke-width="2"/>
+  <rect x="509" y="205" width="201" height="14" rx="5" fill="#94bdc8" stroke="#4f8793" stroke-width="2"/>
+  <rect x="577" y="178" width="58" height="38" rx="7" fill="#55aec4" stroke="#287e92" stroke-width="2"/>
+  <text x="606" y="201" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" font-weight="700" fill="#fff">BIN</text>
+  <text x="609" y="310" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" font-weight="700" fill="#33475b">WORKBENCH</text>
+  <text x="609" y="329" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#526477">OBJ visual + box contact proxy</text>
+  <rect x="751" y="151" width="95" height="135" rx="9" fill="#fff" stroke="#8498aa" stroke-width="2"/>
+  <text x="799" y="176" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" font-weight="700" fill="#33475b">SDF</text>
+  <text x="799" y="200" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#526477">&lt;include&gt;</text>
+  <text x="799" y="220" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#526477">&lt;pose&gt;</text>
+  <text x="799" y="240" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#526477">fixed mount</text>
+  <text x="799" y="260" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#526477">dynamic bin</text>
+  <rect x="55" y="369" width="258" height="32" rx="8" fill="#e9eef5"/>
+  <text x="184" y="390" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" fill="#34475b">separate base and arm commands</text>
+  <rect x="331" y="369" width="258" height="32" rx="8" fill="#e9eef5"/>
+  <text x="460" y="390" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" fill="#34475b">two named model instances</text>
+  <rect x="607" y="369" width="258" height="32" rx="8" fill="#e9eef5"/>
+  <text x="736" y="390" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" fill="#34475b">one Drake plant and scene</text>
+</svg>

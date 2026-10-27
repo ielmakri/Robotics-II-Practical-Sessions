@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="390" viewBox="0 0 840 390" role="img" aria-labelledby="title desc">
+  <title id="title">Two Panda arms inspect assigned panel points and share a center point</title>
+  <desc id="desc">Top-down schematic matching the world layout: two fixed Panda bases are on the west side of a vertical panel, one north and one south. Each has three assigned colored targets, and they visit one shared center target under a one-arm-at-a-time permit.</desc>
+  <rect width="840" height="390" rx="18" fill="#f6f8fb"/>
+  <text x="36" y="42" font-family="Arial,sans-serif" font-size="21" font-weight="700" fill="#1c2b3a">Two-arm inspection with a shared center point</text>
+  <rect x="490" y="78" width="24" height="234" rx="4" fill="#e5e9ee" stroke="#546271" stroke-width="2"/>
+  <text x="550" y="195" transform="rotate(90 550 195)" text-anchor="middle" font-family="Arial,sans-serif" font-size="13" font-weight="700" fill="#405060">FIXED PANEL</text>
+  <rect x="425" y="179" width="112" height="32" rx="4" fill="#f5d56d" opacity="0.62" stroke="#a27600" stroke-width="2" stroke-dasharray="5 4"/>
+  <text x="475" y="228" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" font-weight="700" fill="#765600">shared center zone</text>
+  <rect x="455" y="90" width="12" height="38" rx="6" fill="#e5e9ee" stroke="#546271"/>
+  <rect x="455" y="262" width="12" height="38" rx="6" fill="#e5e9ee" stroke="#546271"/>
+  <text x="415" y="108" text-anchor="end" font-family="Arial,sans-serif" font-size="12" font-weight="700" fill="#14528d">Panda B zone</text>
+  <text x="415" y="288" text-anchor="end" font-family="Arial,sans-serif" font-size="12" font-weight="700" fill="#a64a0c">Panda A zone</text>
+  <g fill="#1683d8" stroke="#07528e" stroke-width="2"><circle cx="475" cy="105" r="8"/><circle cx="475" cy="120" r="8"/><circle cx="475" cy="135" r="8"/></g>
+  <g fill="#ef792e" stroke="#9e4911" stroke-width="2"><circle cx="475" cy="255" r="8"/><circle cx="475" cy="270" r="8"/><circle cx="475" cy="285" r="8"/></g>
+  <circle cx="475" cy="195" r="10" fill="#f5bd21" stroke="#a27600" stroke-width="2"/>
+  <text x="430" y="199" text-anchor="end" font-family="Arial,sans-serif" font-size="11" fill="#765600">shared target</text>
+  <g transform="translate(185 118)">
+    <rect x="-36" y="-31" width="72" height="62" rx="10" fill="#fff" stroke="#2563eb" stroke-width="3"/>
+    <circle cx="0" cy="0" r="11" fill="#2563eb"/>
+    <text x="0" y="51" text-anchor="middle" font-family="Arial,sans-serif" font-size="14" font-weight="700" fill="#1c2b3a">Panda B</text>
+  </g>
+  <g transform="translate(185 273)">
+    <rect x="-36" y="-31" width="72" height="62" rx="10" fill="#fff" stroke="#e36b21" stroke-width="3"/>
+    <circle cx="0" cy="0" r="11" fill="#e36b21"/>
+    <text x="0" y="51" text-anchor="middle" font-family="Arial,sans-serif" font-size="14" font-weight="700" fill="#1c2b3a">Panda A</text>
+  </g>
+  <path d="M225 118 C310 116 365 126 458 133" fill="none" stroke="#2563eb" stroke-width="4" stroke-dasharray="8 6"/>
+  <path d="M225 273 C310 274 365 263 458 257" fill="none" stroke="#e36b21" stroke-width="4" stroke-dasharray="8 6"/>
+  <path d="M225 133 C310 160 365 180 463 193" fill="none" stroke="#2563eb" stroke-width="2" stroke-dasharray="5 6"/>
+  <path d="M225 257 C310 230 365 210 463 197" fill="none" stroke="#e36b21" stroke-width="2" stroke-dasharray="5 6"/>
+  <text x="420" y="354" text-anchor="middle" font-family="Arial,sans-serif" font-size="13" fill="#586979">Each arm scans its side; the shared center point is visited under a one-arm-at-a-time permit.</text>
+</svg>

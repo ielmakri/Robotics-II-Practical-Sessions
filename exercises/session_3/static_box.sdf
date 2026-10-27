@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<sdf version="1.6">
+  <model name="session3_static_box">
+    <static>true</static>
+    <pose>-0.7 0.6 0.04 0 0 0</pose>
+    <link name="box_link">
+      <visual name="visual">
+        <geometry><box><size>0.08 0.08 0.08</size></box></geometry>
+        <material><diffuse>0.95 0.35 0.05 1</diffuse></material>
+      </visual>
+      <collision name="collision">
+        <geometry><box><size>0.08 0.08 0.08</size></box></geometry>
+      </collision>
+    </link>
+  </model>
+</sdf>

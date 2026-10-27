@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="590" viewBox="0 0 1200 590">
+  <rect width="1200" height="590" fill="#f4f6f8"/>
+  <text x="600" y="34" text-anchor="middle" font-family="Arial, sans-serif" font-size="22" font-weight="bold" fill="#1f2937">Expected view: two nodes and one graphical simulator</text>
+  <rect x="30" y="58" width="360" height="500" rx="8" fill="#161b22"/>
+  <rect x="30" y="58" width="360" height="36" rx="8" fill="#30363d"/>
+  <text x="48" y="82" fill="#ffffff" font-family="Arial, sans-serif" font-size="14">Terminal A - simulator node</text>
+  <g fill="#c9d1d9" font-family="monospace" font-size="14">
+    <text x="48" y="128">$ source ~/git/Robotics-II/</text>
+    <text x="48" y="150">  scripts/setup_workspace.bash</text>
+    <text x="48" y="188">$ ros2 run turtlesim turtlesim_node</text>
+    <text x="48" y="226" fill="#7ee787">[INFO] [turtlesim]: Starting</text>
+    <text x="48" y="248" fill="#7ee787">turtlesim with node name /turtlesim</text>
+    <text x="48" y="286" fill="#8b949e">The prompt does not return while</text>
+    <text x="48" y="308" fill="#8b949e">the node is running.</text>
+    <text x="48" y="350" fill="#f2cc60">Use Ctrl+C to stop.</text>
+  </g>
+  <rect x="420" y="58" width="360" height="500" rx="8" fill="#69b8c8" stroke="#3c7480" stroke-width="2"/>
+  <rect x="420" y="58" width="360" height="36" rx="8" fill="#e5e7eb"/>
+  <text x="600" y="82" text-anchor="middle" fill="#111827" font-family="Arial, sans-serif" font-size="14">turtlesim</text>
+  <path d="M500 390 C550 290, 650 430, 710 260" fill="none" stroke="#d94f4f" stroke-width="4" stroke-linecap="round"/>
+  <g transform="translate(660 270) rotate(-25)">
+    <ellipse cx="0" cy="0" rx="46" ry="32" fill="#63c174" stroke="#164e35" stroke-width="4"/>
+    <circle cx="48" cy="0" r="15" fill="#63c174" stroke="#164e35" stroke-width="4"/>
+    <ellipse cx="-24" cy="-30" rx="12" ry="20" fill="#63c174" stroke="#164e35" stroke-width="4"/>
+    <ellipse cx="-24" cy="30" rx="12" ry="20" fill="#63c174" stroke="#164e35" stroke-width="4"/>
+    <ellipse cx="22" cy="-29" rx="11" ry="18" fill="#63c174" stroke="#164e35" stroke-width="4"/>
+    <ellipse cx="22" cy="29" rx="11" ry="18" fill="#63c174" stroke="#164e35" stroke-width="4"/>
+    <circle cx="52" cy="-4" r="2.5" fill="#111827"/>
+  </g>
+  <text x="600" y="520" text-anchor="middle" fill="#164e35" font-family="Arial, sans-serif" font-size="16" font-weight="bold">Arrow keys change /turtle1/cmd_vel</text>
+  <rect x="810" y="58" width="360" height="500" rx="8" fill="#161b22"/>
+  <rect x="810" y="58" width="360" height="36" rx="8" fill="#30363d"/>
+  <text x="828" y="82" fill="#ffffff" font-family="Arial, sans-serif" font-size="14">Terminal B - keyboard node</text>
+  <g fill="#c9d1d9" font-family="monospace" font-size="14">
+    <text x="828" y="128">$ source ~/git/Robotics-II/</text>
+    <text x="828" y="150">  scripts/setup_workspace.bash</text>
+    <text x="828" y="188">$ ros2 run turtlesim</text>
+    <text x="828" y="210">  turtle_teleop_key</text>
+    <text x="828" y="252" fill="#7ee787">Reading from keyboard</text>
+    <text x="828" y="286">Use arrow keys to move the turtle.</text>
+    <text x="828" y="324" fill="#f2cc60">Keep this terminal selected.</text>
+    <text x="828" y="362">    ↑</text>
+    <text x="828" y="386">  ← ↓ →</text>
+  </g>
+</svg>

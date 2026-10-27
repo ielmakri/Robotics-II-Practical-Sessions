@@ -1,0 +1,69 @@
+<?xml version="1.0"?>
+<sdf version="1.6">
+  <world name="husky_panda_inspection">
+    <include>
+      <uri>package://robotics_ii_models/objects_scenes/floor.sdf</uri>
+      <name>ground_floor</name>
+    </include>
+
+    <include>
+      <uri>package://robotics_ii_models/descriptions/robots/mobile/clearpath_husky/urdf/husky.urdf</uri>
+      <name>husky_runner</name>
+      <pose>-2.0 -0.55 0.13228 0 0 0</pose>
+    </include>
+
+    <include>
+      <uri>package://robotics_ii_models/descriptions/robots/arms/panda_fer/urdf/panda_fer_hand.urdf</uri>
+      <name>panda_inspector</name>
+      <pose>0.35 0 0 0 0 0</pose>
+    </include>
+    <joint name="world_to_panda_inspector" type="fixed">
+      <parent>world</parent>
+      <child>panda_inspector::panda_link0</child>
+    </joint>
+
+    <model name="inspection_table">
+      <static>true</static>
+      <pose>1.25 0 0.3 0 0 0</pose>
+      <link name="table">
+        <visual name="visual">
+          <geometry><box><size>0.7 0.8 0.6</size></box></geometry>
+          <material><diffuse>0.48 0.52 0.58 1</diffuse></material>
+        </visual>
+        <collision name="collision">
+          <geometry><box><size>0.7 0.8 0.6</size></box></geometry>
+        </collision>
+      </link>
+    </model>
+
+    <model name="inspection_target_1">
+      <static>true</static><pose>0.9 -0.15 0.66 0 0 0</pose>
+      <link name="marker"><visual name="visual">
+        <geometry><sphere><radius>0.035</radius></sphere></geometry>
+        <material><diffuse>0.1 0.55 0.95 1</diffuse></material>
+      </visual></link>
+    </model>
+    <model name="inspection_target_2">
+      <static>true</static><pose>1.0 0 0.66 0 0 0</pose>
+      <link name="marker"><visual name="visual">
+        <geometry><sphere><radius>0.035</radius></sphere></geometry>
+        <material><diffuse>0.95 0.68 0.08 1</diffuse></material>
+      </visual></link>
+    </model>
+    <model name="inspection_target_3">
+      <static>true</static><pose>1.1 0.15 0.66 0 0 0</pose>
+      <link name="marker"><visual name="visual">
+        <geometry><sphere><radius>0.035</radius></sphere></geometry>
+        <material><diffuse>0.1 0.72 0.38 1</diffuse></material>
+      </visual></link>
+    </model>
+
+    <model name="husky_wait_zone">
+      <static>true</static><pose>-0.55 -0.55 0.006 0 0 0</pose>
+      <link name="marker"><visual name="visual">
+        <geometry><box><size>0.8 0.9 0.01</size></box></geometry>
+        <material><diffuse>0.1 0.35 0.9 0.45</diffuse></material>
+      </visual></link>
+    </model>
+  </world>
+</sdf>

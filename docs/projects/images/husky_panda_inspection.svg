@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="390" viewBox="0 0 840 390" role="img" aria-labelledby="title desc">
+  <title id="title">Husky and Panda coordinate an inspection visit</title>
+  <desc id="desc">Top-down schematic: a mobile Husky travels from a home bay to a marked waiting zone. A fixed Panda arm scans three targets only after the Husky reports stopped and arrived.</desc>
+  <rect width="840" height="390" rx="18" fill="#f6f8fb"/>
+  <text x="36" y="42" font-family="Arial,sans-serif" font-size="21" font-weight="700" fill="#1c2b3a">Mobile service robot and fixed inspection arm</text>
+  <rect x="60" y="88" width="720" height="230" rx="14" fill="#e9edf2" stroke="#405060" stroke-width="2"/>
+  <path d="M185 200 H450" fill="none" stroke="#2563eb" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arr)"/>
+  <rect x="80" y="155" width="105" height="92" rx="12" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+  <text x="132" y="275" text-anchor="middle" font-family="Arial,sans-serif" font-size="14" fill="#263746">Husky home</text>
+  <rect x="405" y="188" width="110" height="75" rx="10" fill="#dbeafe" stroke="#2563eb" stroke-width="2" stroke-dasharray="6 4"/>
+  <text x="460" y="282" text-anchor="middle" font-family="Arial,sans-serif" font-size="13" fill="#263746">arrival / wait zone</text>
+  <g transform="translate(132 200)">
+    <rect x="-27" y="-20" width="54" height="40" rx="10" fill="#2563eb"/>
+    <circle cx="-16" cy="-23" r="7" fill="#12233b"/><circle cx="16" cy="-23" r="7" fill="#12233b"/>
+    <circle cx="-16" cy="23" r="7" fill="#12233b"/><circle cx="16" cy="23" r="7" fill="#12233b"/>
+    <text x="0" y="5" text-anchor="middle" font-family="Arial,sans-serif" font-size="13" font-weight="700" fill="white">H</text>
+  </g>
+  <rect x="585" y="112" width="160" height="165" rx="12" fill="#fff" stroke="#e36b21" stroke-width="3"/>
+  <text x="665" y="138" text-anchor="middle" font-family="Arial,sans-serif" font-size="14" font-weight="700" fill="#9e4911">FIXED PANDA</text>
+  <rect x="625" y="193" width="80" height="22" rx="4" fill="#727d89"/>
+  <g fill="#21a179" stroke="#11634b" stroke-width="2"><circle cx="625" cy="173" r="7"/><circle cx="665" cy="173" r="7"/><circle cx="705" cy="173" r="7"/></g>
+  <path d="M665 218 Q665 190 665 182" fill="none" stroke="#e36b21" stroke-width="6" stroke-linecap="round"/>
+  <text x="665" y="246" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" fill="#405060">scan 3 fixed markers</text>
+  <rect x="225" y="102" width="267" height="51" rx="10" fill="#fff" stroke="#758392" stroke-width="2"/>
+  <text x="358" y="124" text-anchor="middle" font-family="Arial,sans-serif" font-size="13" font-weight="700" fill="#263746">MISSION HANDSHAKE</text>
+  <text x="358" y="143" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" fill="#586979">arrived + stopped → scan permit</text>
+  <text x="420" y="355" text-anchor="middle" font-family="Arial,sans-serif" font-size="13" fill="#586979">No payload, gripper contact, SLAM or camera perception is required.</text>
+  <defs><marker id="arr" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#2563eb"/></marker></defs>
+</svg>

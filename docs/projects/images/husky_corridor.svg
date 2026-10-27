@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="390" viewBox="0 0 840 390" role="img" aria-labelledby="title desc">
+  <title id="title">Two Huskies negotiate one shared aisle</title>
+  <desc id="desc">Top-down schematic of two mobile robots approaching a shared one-lane aisle from opposite ends. A coordinator grants access to one robot at a time.</desc>
+  <rect width="840" height="390" rx="18" fill="#f6f8fb"/>
+  <text x="36" y="42" font-family="Arial,sans-serif" font-size="21" font-weight="700" fill="#1c2b3a">Cross-dock aisle reservation</text>
+  <rect x="70" y="90" width="700" height="214" rx="12" fill="#e9edf2" stroke="#405060" stroke-width="3"/>
+  <rect x="360" y="128" width="120" height="138" fill="#f5d56d" opacity="0.38" stroke="#a27600" stroke-width="2" stroke-dasharray="8 7"/>
+  <text x="420" y="120" text-anchor="middle" font-family="Arial,sans-serif" font-size="15" font-weight="700" fill="#6d5100">SINGLE-LANE ZONE</text>
+  <rect x="365" y="141" width="110" height="13" rx="3" fill="#596674"/>
+  <rect x="365" y="240" width="110" height="13" rx="3" fill="#596674"/>
+  <rect x="90" y="155" width="120" height="84" rx="12" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+  <rect x="630" y="155" width="120" height="84" rx="12" fill="#ffeadc" stroke="#e36b21" stroke-width="2"/>
+  <g transform="translate(145 197)">
+    <rect x="-28" y="-20" width="56" height="40" rx="10" fill="#2563eb"/>
+    <circle cx="-17" cy="-23" r="7" fill="#12233b"/><circle cx="17" cy="-23" r="7" fill="#12233b"/>
+    <circle cx="-17" cy="23" r="7" fill="#12233b"/><circle cx="17" cy="23" r="7" fill="#12233b"/>
+    <text x="0" y="5" text-anchor="middle" font-family="Arial,sans-serif" font-size="14" font-weight="700" fill="white">H-A</text>
+  </g>
+  <g transform="translate(695 197)">
+    <rect x="-28" y="-20" width="56" height="40" rx="10" fill="#e36b21"/>
+    <circle cx="-17" cy="-23" r="7" fill="#12233b"/><circle cx="17" cy="-23" r="7" fill="#12233b"/>
+    <circle cx="-17" cy="23" r="7" fill="#12233b"/><circle cx="17" cy="23" r="7" fill="#12233b"/>
+    <text x="0" y="5" text-anchor="middle" font-family="Arial,sans-serif" font-size="14" font-weight="700" fill="white">H-B</text>
+  </g>
+  <path d="M205 182 H322" fill="none" stroke="#2563eb" stroke-width="5" marker-end="url(#blueArrow)"/>
+  <path d="M635 217 H518" fill="none" stroke="#e36b21" stroke-width="5" marker-end="url(#orangeArrow)"/>
+  <text x="420" y="187" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" font-weight="700" fill="#263746">one at a time</text>
+  <text x="420" y="207" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" fill="#405060">grant → enter → clear</text>
+  <text x="145" y="275" text-anchor="middle" font-family="Arial,sans-serif" font-size="14" fill="#263746">start / wait bay A</text>
+  <text x="695" y="275" text-anchor="middle" font-family="Arial,sans-serif" font-size="14" fill="#263746">start / wait bay B</text>
+  <text x="420" y="348" text-anchor="middle" font-family="Arial,sans-serif" font-size="13" fill="#586979">Layout sketch, not to scale. No payload, LiDAR or SLAM is required.</text>
+  <defs>
+    <marker id="blueArrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#2563eb"/></marker>
+    <marker id="orangeArrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#e36b21"/></marker>
+  </defs>
+</svg>

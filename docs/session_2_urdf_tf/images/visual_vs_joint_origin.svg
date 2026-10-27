@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="560" viewBox="0 0 1100 560" role="img" aria-label="Difference between changing a visual origin and changing a joint origin">
+  <defs>
+    <marker id="arrow2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#334155"/>
+    </marker>
+  </defs>
+  <rect width="1100" height="560" fill="#ffffff"/>
+  <text x="50" y="48" font-family="Arial, sans-serif" font-size="26" font-weight="700" fill="#0f172a">Visual origin versus joint origin</text>
+  <text x="50" y="82" font-family="Arial, sans-serif" font-size="16" fill="#475569">A visual-origin edit changes the displayed shape; a joint-origin edit changes the child frame and its descendants.</text>
+
+  <rect x="60" y="120" width="470" height="300" rx="12" fill="#f8fafc" stroke="#cbd5e1" stroke-width="2"/>
+  <rect x="570" y="120" width="470" height="300" rx="12" fill="#f8fafc" stroke="#cbd5e1" stroke-width="2"/>
+
+  <text x="295" y="158" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#0f172a">Change only visual origin</text>
+  <text x="805" y="158" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#0f172a">Change joint origin</text>
+
+  <text x="155" y="205" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#334155">link_2 frame unchanged</text>
+  <line x1="155" y1="280" x2="430" y2="280" stroke="#334155" stroke-width="3" marker-end="url(#arrow2)"/>
+  <rect x="95" y="245" width="220" height="70" rx="7" fill="#fed7aa" stroke="#ea580c" stroke-width="2"/>
+  <circle cx="155" cy="280" r="9" fill="#0f172a"/>
+  <text x="205" y="345" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#9a3412">orange visual is misplaced</text>
+  <circle cx="430" cy="280" r="11" fill="#e2e8f0" stroke="#475569" stroke-width="2"/>
+  <text x="430" y="325" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#334155">tool0 unchanged</text>
+
+  <text x="670" y="205" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#334155">new joint_2 frame</text>
+  <line x1="670" y1="280" x2="945" y2="225" stroke="#334155" stroke-width="3" marker-end="url(#arrow2)"/>
+  <rect x="670" y="245" width="220" height="70" rx="7" fill="#fed7aa" stroke="#ea580c" stroke-width="2"/>
+  <circle cx="670" cy="280" r="9" fill="#0f172a"/>
+  <text x="780" y="345" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#9a3412">child frame and geometry moved</text>
+  <circle cx="945" cy="225" r="11" fill="#e2e8f0" stroke="#475569" stroke-width="2"/>
+  <text x="945" y="190" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#334155">tool0 moved</text>
+
+  <rect x="120" y="465" width="860" height="52" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="2"/>
+  <text x="550" y="497" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" fill="#334155">TF unchanged: suspect visual, collision or inertial origins. TF changed: inspect joint origins or tree structure.</text>
+</svg>

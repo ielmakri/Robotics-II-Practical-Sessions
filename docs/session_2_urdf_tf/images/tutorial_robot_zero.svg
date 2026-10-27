@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="520" viewBox="0 0 1100 520" role="img" aria-label="Zero configuration of the Session 2 two degree of freedom robot">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#334155"/>
+    </marker>
+  </defs>
+  <rect width="1100" height="520" fill="#ffffff"/>
+  <text x="50" y="48" font-family="Arial, sans-serif" font-size="26" font-weight="700" fill="#0f172a">Session 2 reference robot at zero configuration</text>
+  <text x="50" y="82" font-family="Arial, sans-serif" font-size="16" fill="#475569">Joint frames define the kinematic tree; visual geometry can be offset from those frames.</text>
+
+  <line x1="90" y1="430" x2="535" y2="430" stroke="#cbd5e1" stroke-width="2"/>
+  <line x1="220" y1="430" x2="220" y2="130" stroke="#94a3b8" stroke-width="2" stroke-dasharray="6 6"/>
+  <line x1="220" y1="430" x2="500" y2="430" stroke="#94a3b8" stroke-width="2" stroke-dasharray="6 6"/>
+
+  <rect x="160" y="398" width="120" height="32" rx="6" fill="#cbd5e1" stroke="#64748b" stroke-width="2"/>
+  <text x="220" y="420" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" font-weight="700" fill="#334155">base_link</text>
+
+  <rect x="200" y="210" width="40" height="188" rx="5" fill="#1d4ed8" stroke="#1e3a8a" stroke-width="2"/>
+  <text x="270" y="320" font-family="Arial, sans-serif" font-size="14" fill="#1e3a8a">link_1 visual</text>
+
+  <rect x="220" y="192" width="250" height="36" rx="5" fill="#ea580c" stroke="#9a3412" stroke-width="2"/>
+  <text x="345" y="252" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="700" fill="#9a3412">link_2 visual</text>
+
+  <line x1="220" y1="398" x2="220" y2="210" stroke="#334155" stroke-width="3" marker-end="url(#arrow)"/>
+  <line x1="220" y1="210" x2="470" y2="210" stroke="#334155" stroke-width="3" marker-end="url(#arrow)"/>
+
+  <circle cx="220" cy="398" r="9" fill="#0f172a"/>
+  <text x="250" y="385" font-family="Arial, sans-serif" font-size="14" fill="#0f172a">joint_1 - z-axis</text>
+
+  <circle cx="220" cy="210" r="9" fill="#0f172a"/>
+  <text x="220" y="166" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#0f172a">joint_2 frame (axis y)</text>
+
+  <circle cx="470" cy="210" r="13" fill="#e2e8f0" stroke="#475569" stroke-width="2"/>
+  <text x="500" y="216" font-family="Arial, sans-serif" font-size="14" fill="#334155">tool0 frame</text>
+
+  <text x="180" y="458" font-family="Arial, sans-serif" font-size="13" fill="#475569">world</text>
+  <text x="500" y="458" font-family="Arial, sans-serif" font-size="13" fill="#475569">x</text>
+  <text x="194" y="128" font-family="Arial, sans-serif" font-size="13" fill="#475569">z</text>
+
+  <rect x="650" y="130" width="380" height="270" rx="12" fill="#f8fafc" stroke="#cbd5e1" stroke-width="2"/>
+  <text x="680" y="172" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#0f172a">What to check in RViz</text>
+  <text x="680" y="215" font-family="Arial, sans-serif" font-size="15" fill="#334155">1. Fixed Frame = world</text>
+  <text x="680" y="255" font-family="Arial, sans-serif" font-size="15" fill="#334155">2. joint_1 moves the full arm</text>
+  <text x="680" y="295" font-family="Arial, sans-serif" font-size="15" fill="#334155">3. joint_2 moves link_2 and tool0</text>
+  <text x="680" y="335" font-family="Arial, sans-serif" font-size="15" fill="#334155">4. tool0 stays at the orange tip</text>
+</svg>

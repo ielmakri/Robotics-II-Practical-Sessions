@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="560" viewBox="0 0 1200 560">
+  <rect width="1200" height="560" fill="#f4f6f8"/>
+  <rect x="32" y="26" width="1136" height="508" rx="10" fill="#0d1117" stroke="#b9c2cc" stroke-width="2"/>
+  <rect x="32" y="26" width="1136" height="38" rx="10" fill="#30363d"/>
+  <circle cx="55" cy="45" r="6" fill="#ff5f56"/>
+  <circle cx="76" cy="45" r="6" fill="#ffbd2e"/>
+  <circle cx="97" cy="45" r="6" fill="#27c93f"/>
+  <text x="600" y="51" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="14">Terminal C - inspect the topic contract</text>
+  <g font-family="monospace" font-size="17">
+    <text x="58" y="102" fill="#c9d1d9">$ ros2 topic info /turtle1/cmd_vel --verbose</text>
+    <text x="58" y="136" fill="#7ee787">Type: geometry_msgs/msg/Twist</text>
+    <text x="58" y="168" fill="#c9d1d9">Publisher count: 1</text>
+    <text x="58" y="200" fill="#c9d1d9">Subscription count: 1</text>
+    <text x="58" y="242" fill="#8b949e">Publisher and subscriber details follow, including QoS.</text>
+    <text x="58" y="294" fill="#c9d1d9">$ ros2 interface show geometry_msgs/msg/Twist</text>
+    <text x="58" y="328" fill="#79c0ff">Vector3 linear</text>
+    <text x="90" y="360" fill="#c9d1d9">float64 x</text>
+    <text x="90" y="388" fill="#c9d1d9">float64 y</text>
+    <text x="90" y="416" fill="#c9d1d9">float64 z</text>
+    <text x="58" y="450" fill="#79c0ff">Vector3 angular</text>
+    <text x="90" y="482" fill="#c9d1d9">float64 x, y, z</text>
+    <text x="720" y="328" fill="#f2cc60">name</text>
+    <text x="790" y="328" fill="#c9d1d9">+</text>
+    <text x="814" y="328" fill="#f2cc60">type</text>
+    <text x="872" y="328" fill="#c9d1d9">+</text>
+    <text x="896" y="328" fill="#f2cc60">QoS</text>
+    <text x="720" y="360" fill="#c9d1d9">must be compatible</text>
+    <text x="720" y="402" fill="#8b949e">Values and endpoint identifiers</text>
+    <text x="720" y="430" fill="#8b949e">will differ on each machine.</text>
+  </g>
+</svg>

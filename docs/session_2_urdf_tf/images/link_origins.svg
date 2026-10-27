@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="770" viewBox="0 0 1200 770" role="img" aria-labelledby="title desc">
+  <title id="title">Visual, collision and inertial origins inside one URDF link</title>
+  <desc id="desc">Three centered panels show that visual, collision and inertial origins are independent offsets from the same link frame.</desc>
+  <rect width="1200" height="770" fill="#f8fafc"/>
+
+  <text x="600" y="48" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#0f172a">One link, three independent origins</text>
+  <text x="600" y="78" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#475569">All offsets are expressed relative to the same link frame; only link and joint frames enter TF.</text>
+
+  <g font-family="Arial, sans-serif">
+    <rect x="36" y="124" width="348" height="510" rx="16" fill="#ffffff" stroke="#cbd5e1" stroke-width="2"/>
+    <text x="210" y="166" text-anchor="middle" font-size="22" font-weight="700" fill="#b45309">visual origin</text>
+    <text x="210" y="194" text-anchor="middle" font-size="15" fill="#64748b">what RViz displays</text>
+    <line x1="105" y1="350" x2="320" y2="350" stroke="#94a3b8" stroke-width="2"/>
+    <line x1="105" y1="255" x2="105" y2="445" stroke="#94a3b8" stroke-width="2"/>
+    <polygon points="320,350 307,344 307,356" fill="#94a3b8"/>
+    <polygon points="105,255 99,268 111,268" fill="#94a3b8"/>
+    <line x1="105" y1="350" x2="232" y2="350" stroke="#b45309" stroke-width="2" stroke-dasharray="7 6"/>
+    <rect x="172" y="307" width="145" height="86" rx="8" fill="#f97316" fill-opacity="0.88" stroke="#c2410c" stroke-width="3"/>
+    <circle cx="105" cy="350" r="7" fill="#0f172a"/>
+    <text x="105" y="470" text-anchor="middle" font-size="14" font-weight="700" fill="#334155">link_2 frame</text>
+    <text x="232" y="290" text-anchor="middle" font-size="14" fill="#9a3412">visual origin</text>
+    <text x="210" y="516" text-anchor="middle" font-size="16" font-weight="700" fill="#0f172a">Change only this origin</text>
+    <text x="210" y="544" text-anchor="middle" font-size="15" fill="#475569">Geometry moves; TF stays fixed.</text>
+    <text x="210" y="578" text-anchor="middle" font-size="14" fill="#64748b">Typical RViz symptom: an offset-looking link.</text>
+
+    <rect x="426" y="124" width="348" height="510" rx="16" fill="#ffffff" stroke="#cbd5e1" stroke-width="2"/>
+    <text x="600" y="166" text-anchor="middle" font-size="22" font-weight="700" fill="#7c3aed">collision origin</text>
+    <text x="600" y="194" text-anchor="middle" font-size="15" fill="#64748b">contact and distance geometry</text>
+    <line x1="495" y1="350" x2="710" y2="350" stroke="#94a3b8" stroke-width="2"/>
+    <line x1="495" y1="255" x2="495" y2="445" stroke="#94a3b8" stroke-width="2"/>
+    <polygon points="710,350 697,344 697,356" fill="#94a3b8"/>
+    <polygon points="495,255 489,268 501,268" fill="#94a3b8"/>
+    <line x1="495" y1="350" x2="622" y2="350" stroke="#7c3aed" stroke-width="2" stroke-dasharray="7 6"/>
+    <rect x="562" y="319" width="125" height="62" rx="6" fill="#a78bfa" fill-opacity="0.25" stroke="#7c3aed" stroke-width="3"/>
+    <circle cx="495" cy="350" r="7" fill="#0f172a"/>
+    <text x="495" y="470" text-anchor="middle" font-size="14" font-weight="700" fill="#334155">link_2 frame</text>
+    <text x="622" y="302" text-anchor="middle" font-size="14" fill="#6d28d9">collision origin</text>
+    <text x="600" y="516" text-anchor="middle" font-size="16" font-weight="700" fill="#0f172a">May use a simpler shape</text>
+    <text x="600" y="544" text-anchor="middle" font-size="15" fill="#475569">Its offset must still describe the body.</text>
+    <text x="600" y="578" text-anchor="middle" font-size="14" fill="#64748b">Typical symptom: RViz looks right, contact is wrong.</text>
+
+    <rect x="816" y="124" width="348" height="510" rx="16" fill="#ffffff" stroke="#cbd5e1" stroke-width="2"/>
+    <text x="990" y="166" text-anchor="middle" font-size="22" font-weight="700" fill="#15803d">inertial origin</text>
+    <text x="990" y="194" text-anchor="middle" font-size="15" fill="#64748b">centre of mass and inertia tensor</text>
+    <line x1="885" y1="350" x2="1100" y2="350" stroke="#94a3b8" stroke-width="2"/>
+    <line x1="885" y1="255" x2="885" y2="445" stroke="#94a3b8" stroke-width="2"/>
+    <polygon points="1100,350 1087,344 1087,356" fill="#94a3b8"/>
+    <polygon points="885,255 879,268 891,268" fill="#94a3b8"/>
+    <line x1="885" y1="350" x2="1012" y2="350" stroke="#15803d" stroke-width="2" stroke-dasharray="7 6"/>
+    <circle cx="1012" cy="350" r="12" fill="#22c55e" stroke="#166534" stroke-width="3"/>
+    <line x1="1012" y1="320" x2="1012" y2="380" stroke="#15803d" stroke-width="3"/>
+    <line x1="982" y1="350" x2="1042" y2="350" stroke="#15803d" stroke-width="3"/>
+    <circle cx="885" cy="350" r="7" fill="#0f172a"/>
+    <text x="885" y="470" text-anchor="middle" font-size="14" font-weight="700" fill="#334155">link_2 frame</text>
+    <text x="1012" y="302" text-anchor="middle" font-size="14" fill="#166534">centre of mass</text>
+    <text x="990" y="516" text-anchor="middle" font-size="16" font-weight="700" fill="#0f172a">Not an extra TF frame</text>
+    <text x="990" y="544" text-anchor="middle" font-size="15" fill="#475569">It locates dynamics data on the link.</text>
+    <text x="990" y="578" text-anchor="middle" font-size="14" fill="#64748b">Typical symptom: unstable or implausible dynamics.</text>
+  </g>
+
+  <rect x="150" y="674" width="900" height="58" rx="12" fill="#e2e8f0"/>
+  <text x="600" y="700" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="700" fill="#0f172a">A joint origin is different: it places the child link frame and moves TF downstream.</text>
+  <text x="600" y="722" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#475569">That is why a visual-origin error and a joint-origin error produce different diagnostics.</text>
+</svg>

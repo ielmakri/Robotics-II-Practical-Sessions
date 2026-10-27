@@ -1,0 +1,8 @@
+panda_waypoint_sequencer:
+  ros__parameters:
+    use_sim_time: true
+    first_target: [0.20, -0.60, 0.00, -2.00, 0.00, 1.70, 0.70]
+    second_target: [-0.20, -0.80, 0.20, -2.20, 0.00, 1.55, 0.85]
+    goal_tolerance: 0.04
+    hold_time: 1.0
+    command_period: 0.5

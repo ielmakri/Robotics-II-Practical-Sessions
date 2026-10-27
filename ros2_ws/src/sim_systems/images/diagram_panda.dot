@@ -1,0 +1,325 @@
+digraph _159 {
+rankdir=LR
+subgraph cluster159diagram {
+color=black
+concentrate=true
+label=<<TABLE BORDER="0"><TR><TD>
+<B>Diagram</B>
+</TD></TR></TABLE>>;
+subgraph cluster159subsystems {
+color=white
+label=""
+s1 [shape=none, border=0, label=<
+<TABLE BORDER="0" CELLSPACING="0">
+<TR><TD BORDER="1" COLSPAN="2">
+<B>RosInterfaceSystem</B>
+</TD></TR>
+</TABLE>
+>];
+s2 [shape=none, border=0, label=<
+<TABLE BORDER="0" CELLSPACING="0">
+<TR><TD BORDER="1" COLSPAN="2">
+<B>ClockSystem</B>
+</TD></TR>
+<TR>
+<TD PORT="u0" BORDER="1" COLOR="grey" ROWSPAN="1" SIDES="BL"></TD>
+<TD PORT="y0" BORDER="1" >clock</TD>
+</TR>
+</TABLE>
+>];
+s3 [shape=none, border=0, label=<
+<TABLE BORDER="0" CELLSPACING="0">
+<TR><TD BORDER="1" COLSPAN="2">
+<B>RosPublisherSystem</B>
+</TD></TR>
+<TR>
+<TD PORT="u0" BORDER="1" >message</TD>
+<TD PORT="y0" BORDER="1" COLOR="grey" ROWSPAN="1" SIDES="BR"></TD>
+</TR>
+</TABLE>
+>];
+s4 [shape=none, border=0, label=<
+<TABLE BORDER="0" CELLSPACING="0">
+<TR><TD BORDER="1" COLSPAN="2">
+<B>MultibodyPlant</B><BR/>
+name=plant
+</TD></TR>
+<TR>
+<TD PORT="u0" BORDER="1" >geometry_query</TD>
+<TD PORT="y0" BORDER="1" >geometry_pose</TD>
+</TR>
+<TR>
+<TD PORT="u1" BORDER="1" ><FONT COLOR="grey">WorldModelInstance_actuation</FONT></TD>
+<TD PORT="y1" BORDER="1" ><FONT COLOR="grey">WorldModelInstance_net_actuation</FONT></TD>
+</TR>
+<TR>
+<TD PORT="u2" BORDER="1" ><FONT COLOR="grey">DefaultModelInstance_actuation</FONT></TD>
+<TD PORT="y2" BORDER="1" ><FONT COLOR="grey">DefaultModelInstance_net_actuation</FONT></TD>
+</TR>
+<TR>
+<TD PORT="u3" BORDER="1" >panda_actuation</TD>
+<TD PORT="y3" BORDER="1" >panda_net_actuation</TD>
+</TR>
+<TR>
+<TD PORT="u4" BORDER="1" >actuation</TD>
+<TD PORT="y4" BORDER="1" >net_actuation</TD>
+</TR>
+<TR>
+<TD PORT="u5" BORDER="1" ><FONT COLOR="grey">WorldModelInstance_desired_state</FONT></TD>
+<TD PORT="y5" BORDER="1" >state</TD>
+</TR>
+<TR>
+<TD PORT="u6" BORDER="1" ><FONT COLOR="grey">DefaultModelInstance_desired_state</FONT></TD>
+<TD PORT="y6" BORDER="1" >body_poses</TD>
+</TR>
+<TR>
+<TD PORT="u7" BORDER="1" ><FONT COLOR="grey">panda_desired_state</FONT></TD>
+<TD PORT="y7" BORDER="1" >spatial_velocities</TD>
+</TR>
+<TR>
+<TD PORT="u8" BORDER="1" >applied_generalized_force</TD>
+<TD PORT="y8" BORDER="1" >spatial_accelerations</TD>
+</TR>
+<TR>
+<TD PORT="u9" BORDER="1" >applied_spatial_force</TD>
+<TD PORT="y9" BORDER="1" >generalized_acceleration</TD>
+</TR>
+<TR>
+<TD PORT="u10" BORDER="1" COLOR="grey" ROWSPAN="11" SIDES="BL"></TD>
+<TD PORT="y10" BORDER="1" ><FONT COLOR="grey">WorldModelInstance_state</FONT></TD>
+</TR>
+<TR>
+<TD PORT="y11" BORDER="1" ><FONT COLOR="grey">WorldModelInstance_generalized_acceleration</FONT></TD>
+</TR>
+<TR>
+<TD PORT="y12" BORDER="1" ><FONT COLOR="grey">DefaultModelInstance_state</FONT></TD>
+</TR>
+<TR>
+<TD PORT="y13" BORDER="1" ><FONT COLOR="grey">DefaultModelInstance_generalized_acceleration</FONT></TD>
+</TR>
+<TR>
+<TD PORT="y14" BORDER="1" >panda_state</TD>
+</TR>
+<TR>
+<TD PORT="y15" BORDER="1" >panda_generalized_acceleration</TD>
+</TR>
+<TR>
+<TD PORT="y16" BORDER="1" ><FONT COLOR="grey">WorldModelInstance_generalized_contact_forces</FONT></TD>
+</TR>
+<TR>
+<TD PORT="y17" BORDER="1" ><FONT COLOR="grey">DefaultModelInstance_generalized_contact_forces</FONT></TD>
+</TR>
+<TR>
+<TD PORT="y18" BORDER="1" >panda_generalized_contact_forces</TD>
+</TR>
+<TR>
+<TD PORT="y19" BORDER="1" >reaction_forces</TD>
+</TR>
+<TR>
+<TD PORT="y20" BORDER="1" >contact_results</TD>
+</TR>
+</TABLE>
+>];
+s5 [shape=none, border=0, label=<
+<TABLE BORDER="0" CELLSPACING="0">
+<TR><TD BORDER="1" COLSPAN="2">
+<B>SceneGraph</B><BR/>
+name=scene_graph
+</TD></TR>
+<TR>
+<TD PORT="u0" BORDER="1" >plant_pose</TD>
+<TD PORT="y0" BORDER="1" ROWSPAN="2">query</TD>
+</TR>
+<TR>
+<TD PORT="u1" BORDER="1" >plant_configuration</TD>
+</TR>
+</TABLE>
+>];
+subgraph cluster119diagram {
+color=black
+concentrate=true
+label=<<TABLE BORDER="0"><TR><TD>
+<B>SceneTfBroadcasterSystem</B>
+</TD></TR></TABLE>>;
+subgraph clusters119in {
+rank=same
+color=lightgrey
+style=filled
+label="input ports"
+s119in [shape=none, label=<
+<TABLE BORDER="0" COLOR="blue" CELLSPACING="3" STYLE="rounded">
+<TR><TD BORDER="1" PORT="0">graph_query</TD></TR>
+</TABLE>
+>];
+}
+subgraph cluster119subsystems {
+color=white
+label=""
+s120 [shape=none, border=0, label=<
+<TABLE BORDER="0" CELLSPACING="0">
+<TR><TD BORDER="1" COLSPAN="2">
+<B>SceneTfSystem</B>
+</TD></TR>
+<TR>
+<TD PORT="u0" BORDER="1" >graph_query</TD>
+<TD PORT="y0" BORDER="1" >scene_tf</TD>
+</TR>
+</TABLE>
+>];
+s121 [shape=none, border=0, label=<
+<TABLE BORDER="0" CELLSPACING="0">
+<TR><TD BORDER="1" COLSPAN="2">
+<B>RosPublisherSystem</B>
+</TD></TR>
+<TR>
+<TD PORT="u0" BORDER="1" >message</TD>
+<TD PORT="y0" BORDER="1" COLOR="grey" ROWSPAN="1" SIDES="BR"></TD>
+</TR>
+</TABLE>
+>];
+s120:y0:e -> s121:u0:w
+s119in:0:e -> s120:u0:w [color=blue];
+}
+}
+subgraph cluster122diagram {
+color=black
+concentrate=true
+label=<<TABLE BORDER="0"><TR><TD>
+<B>RvizVisualizer</B>
+</TD></TR></TABLE>>;
+subgraph clusters122in {
+rank=same
+color=lightgrey
+style=filled
+label="input ports"
+s122in [shape=none, label=<
+<TABLE BORDER="0" COLOR="blue" CELLSPACING="3" STYLE="rounded">
+<TR><TD BORDER="1" PORT="0">graph_query</TD></TR>
+</TABLE>
+>];
+}
+subgraph cluster122subsystems {
+color=white
+label=""
+s123 [shape=none, border=0, label=<
+<TABLE BORDER="0" CELLSPACING="0">
+<TR><TD BORDER="1" COLSPAN="2">
+<B>RosPublisherSystem</B>
+</TD></TR>
+<TR>
+<TD PORT="u0" BORDER="1" >message</TD>
+<TD PORT="y0" BORDER="1" COLOR="grey" ROWSPAN="1" SIDES="BR"></TD>
+</TR>
+</TABLE>
+>];
+s124 [shape=none, border=0, label=<
+<TABLE BORDER="0" CELLSPACING="0">
+<TR><TD BORDER="1" COLSPAN="2">
+<B>SceneMarkersSystem</B>
+</TD></TR>
+<TR>
+<TD PORT="u0" BORDER="1" >graph_query</TD>
+<TD PORT="y0" BORDER="1" >scene_markers</TD>
+</TR>
+</TABLE>
+>];
+s128 [shape=none, border=0, label=<
+<TABLE BORDER="0" CELLSPACING="0">
+<TR><TD BORDER="1" COLSPAN="2">
+<B>RosPublisherSystem</B>
+</TD></TR>
+<TR>
+<TD PORT="u0" BORDER="1" >message</TD>
+<TD PORT="y0" BORDER="1" COLOR="grey" ROWSPAN="1" SIDES="BR"></TD>
+</TR>
+</TABLE>
+>];
+s129 [shape=none, border=0, label=<
+<TABLE BORDER="0" CELLSPACING="0">
+<TR><TD BORDER="1" COLSPAN="2">
+<B>SceneMarkersSystem</B>
+</TD></TR>
+<TR>
+<TD PORT="u0" BORDER="1" >graph_query</TD>
+<TD PORT="y0" BORDER="1" >scene_markers</TD>
+</TR>
+</TABLE>
+>];
+s133 [shape=none, border=0, label=<
+<TABLE BORDER="0" CELLSPACING="0">
+<TR><TD BORDER="1" COLSPAN="2">
+<B>SceneTfBroadcasterSystem</B>
+</TD></TR>
+<TR>
+<TD PORT="u0" BORDER="1" >graph_query</TD>
+<TD PORT="y0" BORDER="1" COLOR="grey" ROWSPAN="1" SIDES="BR"></TD>
+</TR>
+</TABLE>
+>];
+s124:y0:e -> s123:u0:w
+s129:y0:e -> s128:u0:w
+s122in:0:e -> s124:u0:w [color=blue];
+s122in:0:e -> s129:u0:w [color=blue];
+s122in:0:e -> s133:u0:w [color=blue];
+}
+}
+s136 [shape=none, border=0, label=<
+<TABLE BORDER="0" CELLSPACING="0">
+<TR><TD BORDER="1" COLSPAN="2">
+<B>RosPublisherSystem</B>
+</TD></TR>
+<TR>
+<TD PORT="u0" BORDER="1" >message</TD>
+<TD PORT="y0" BORDER="1" COLOR="grey" ROWSPAN="1" SIDES="BR"></TD>
+</TR>
+</TABLE>
+>];
+s137 [shape=none, border=0, label=<
+<TABLE BORDER="0" CELLSPACING="0">
+<TR><TD BORDER="1" COLSPAN="2">
+<B>ContactMarkersSystem</B>
+</TD></TR>
+<TR>
+<TD PORT="u0" BORDER="1" >u0</TD>
+<TD PORT="y0" BORDER="1" >contact_markers</TD>
+</TR>
+</TABLE>
+>];
+s138 [shape=none, border=0, label=<
+<TABLE BORDER="0" CELLSPACING="0">
+<TR><TD BORDER="1" COLSPAN="2">
+<B>TrajectorySource</B>
+</TD></TR>
+<TR>
+<TD PORT="u0" BORDER="1" COLOR="grey" ROWSPAN="1" SIDES="BL"></TD>
+<TD PORT="y0" BORDER="1" >y0</TD>
+</TR>
+</TABLE>
+>];
+s139 [shape=none, border=0, label=<
+<TABLE BORDER="0" CELLSPACING="0">
+<TR><TD BORDER="1" COLSPAN="2">
+<B>PDGravity</B>
+</TD></TR>
+<TR>
+<TD PORT="u0" BORDER="1" >Desired_state</TD>
+<TD PORT="y0" BORDER="1" ROWSPAN="2">tau_u</TD>
+</TR>
+<TR>
+<TD PORT="u1" BORDER="1" >Current_state</TD>
+</TR>
+</TABLE>
+>];
+s2:y0:e -> s3:u0:w
+s5:y0:e -> s4:u0:w
+s139:y0:e -> s4:u3:w
+s4:y0:e -> s5:u0:w
+s5:y0:e -> s119in:0:w
+s5:y0:e -> s122in:0:w
+s137:y0:e -> s136:u0:w
+s4:y20:e -> s137:u0:w
+s138:y0:e -> s139:u0:w
+s4:y14:e -> s139:u1:w
+}
+}
+}

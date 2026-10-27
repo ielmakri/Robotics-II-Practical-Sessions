@@ -1,0 +1,18 @@
+services:
+  robotics2:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile
+    image: robotics2-course:jazzy
+    container_name: robotics2
+    ports:
+      - "6080:80"     # noVNC desktop: http://localhost:6080
+      - "7000:7000"   # Drake Meshcat: http://localhost:7000
+    volumes:
+      - .:/home/ubuntu/Robotics-II
+    # RViz2 and the VNC X server need more shared memory than Docker's default.
+    shm_size: "1gb"
+    security_opt:
+      - seccomp:unconfined
+    stdin_open: true
+    tty: true
