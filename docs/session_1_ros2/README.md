@@ -1200,17 +1200,13 @@ The existing commander publishes only one fixed target. Your final task is to cr
 For arm joint $i$, define the error as
 
 $$
-
 e_i = q_{d,i} - q_i,
-
 $$
 
 and use the maximum absolute error as the goal condition:
 
 $$
-
 e_{\max} = \max_i |e_i| \leq \varepsilon.
-
 $$
 
 Here, $\varepsilon$ is the `goal_tolerance` parameter. If the robot leaves the tolerance region before `hold_time` has elapsed, the hold timer must restart. The required state progression is:
