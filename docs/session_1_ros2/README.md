@@ -609,7 +609,6 @@ The callback evaluates
 
 $$
 q(t)=A\sin(2\pi f t), \qquad
-
 \dot q(t)=2\pi fA\cos(2\pi f t).
 $$
 
