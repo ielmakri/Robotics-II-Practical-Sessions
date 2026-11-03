@@ -608,11 +608,9 @@ The timer period is the inverse of the desired publication rate.
 The callback evaluates
 
 $$
-
 q(t)=A\sin(2\pi f t), \qquad
 
 \dot q(t)=2\pi fA\cos(2\pi f t).
-
 $$
 
 It then constructs and publishes the message:
